@@ -25,7 +25,7 @@ def get_latest_version():
 def load_existing_model(path):
     return load_model(path)
 
-def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, config=None):
+def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, config=None, metrics=None):
     version_dir = os.path.join(MODELS_DIR, f"v{version}")
     os.makedirs(version_dir, exist_ok=True)
 
@@ -49,7 +49,8 @@ def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, confi
         "scaler_x": os.path.join(version_dir, "scaler_x.pkl"),
         "scaler_y": os.path.join(version_dir, "scaler_y.pkl"),
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-        "config": config or {}
+        "config": config or {},
+        "metrics": metrics or {}   # 👈 thêm vào đây
     }
     with open(os.path.join(version_dir, "meta.json"), "w") as f:
         json.dump(meta, f, indent=2)
@@ -79,7 +80,7 @@ def load_existing_model_with_reset(path, input_shape=None):
             model.build((None, input_shape[0], input_shape[1]))
         except Exception:
             pass 
-        
+
     model.compile(optimizer="adam", loss="mean_squared_error")
     print("🔄 Loaded architecture từ model cũ, reset weights.")
     return model

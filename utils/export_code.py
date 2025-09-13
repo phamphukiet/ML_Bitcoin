@@ -1,7 +1,7 @@
 import os
 from docx import Document
 
-VERSION = "1.3"
+VERSION = "1.5"
 SERVICE_NAME = "coin"
 OUTPUT_NAME = f"{SERVICE_NAME}_export_{VERSION}.docx"
 
