@@ -3,7 +3,7 @@
   "model_path": "models\\v2\\model.h5",
   "scaler_x": "models\\v2\\scaler_x.pkl",
   "scaler_y": "models\\v2\\scaler_y.pkl",
-  "timestamp": "2025-09-13 11:24:32",
+  "timestamp": "2025-09-13 14:03:03",
   "config": {
     "EPOCHS": 10,
     "BATCH_SIZE": 32,

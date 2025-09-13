@@ -8,12 +8,11 @@ np.random.seed(SEED)
 tf.random.set_seed(SEED)
 
 def get_callbacks(version):
-    """Trả về danh sách callbacks cho training, checkpoint lưu vào thư mục version."""
     version_dir = os.path.join(MODELS_DIR, f"v{version}")
     os.makedirs(version_dir, exist_ok=True)
 
     callbacks = [
-        EarlyStopping(monitor="val_loss", patience=8, restore_best_weights=True),
+        EarlyStopping(monitor="val_loss", patience=3, restore_best_weights=True),  # giảm patience
         ModelCheckpoint(
             os.path.join(version_dir, "best_model_tmp.h5"),
             monitor="val_loss",

@@ -4,7 +4,7 @@
     "model_path": "models\\v1\\model.h5",
     "scaler_x": "models\\v1\\scaler_x.pkl",
     "scaler_y": "models\\v1\\scaler_y.pkl",
-    "timestamp": "2025-09-13 11:23:32",
+    "timestamp": "2025-09-13 14:02:45",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,
@@ -16,7 +16,7 @@
     "model_path": "models\\v2\\model.h5",
     "scaler_x": "models\\v2\\scaler_x.pkl",
     "scaler_y": "models\\v2\\scaler_y.pkl",
-    "timestamp": "2025-09-13 11:24:32",
+    "timestamp": "2025-09-13 14:03:03",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,
@@ -28,7 +28,7 @@
     "model_path": "models\\v3\\model.h5",
     "scaler_x": "models\\v3\\scaler_x.pkl",
     "scaler_y": "models\\v3\\scaler_y.pkl",
-    "timestamp": "2025-09-13 12:45:45",
+    "timestamp": "2025-09-13 14:03:21",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,
@@ -40,7 +40,7 @@
     "model_path": "models\\v4\\model.h5",
     "scaler_x": "models\\v4\\scaler_x.pkl",
     "scaler_y": "models\\v4\\scaler_y.pkl",
-    "timestamp": "2025-09-13 12:52:58",
+    "timestamp": "2025-09-13 14:03:39",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,
@@ -52,7 +52,7 @@
     "model_path": "models\\v5\\model.h5",
     "scaler_x": "models\\v5\\scaler_x.pkl",
     "scaler_y": "models\\v5\\scaler_y.pkl",
-    "timestamp": "2025-09-13 12:56:11",
+    "timestamp": "2025-09-13 14:03:56",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,
@@ -64,7 +64,55 @@
     "model_path": "models\\v6\\model.h5",
     "scaler_x": "models\\v6\\scaler_x.pkl",
     "scaler_y": "models\\v6\\scaler_y.pkl",
-    "timestamp": "2025-09-13 12:59:34",
+    "timestamp": "2025-09-13 14:04:14",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 7,
+    "model_path": "models\\v7\\model.h5",
+    "scaler_x": "models\\v7\\scaler_x.pkl",
+    "scaler_y": "models\\v7\\scaler_y.pkl",
+    "timestamp": "2025-09-13 14:04:30",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 8,
+    "model_path": "models\\v8\\model.h5",
+    "scaler_x": "models\\v8\\scaler_x.pkl",
+    "scaler_y": "models\\v8\\scaler_y.pkl",
+    "timestamp": "2025-09-13 14:04:48",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 9,
+    "model_path": "models\\v9\\model.h5",
+    "scaler_x": "models\\v9\\scaler_x.pkl",
+    "scaler_y": "models\\v9\\scaler_y.pkl",
+    "timestamp": "2025-09-13 14:05:06",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 10,
+    "model_path": "models\\v10\\model.h5",
+    "scaler_x": "models\\v10\\scaler_x.pkl",
+    "scaler_y": "models\\v10\\scaler_y.pkl",
+    "timestamp": "2025-09-13 14:05:26",
     "config": {
       "EPOCHS": 10,
       "BATCH_SIZE": 32,

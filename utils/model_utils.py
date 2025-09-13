@@ -1,5 +1,5 @@
 import os, json, time, joblib
-from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential, load_model,clone_model
 from tensorflow.keras.layers import LSTM, Dropout, Dense
 from config import UNITS, MODELS_DIR
 
@@ -70,3 +70,17 @@ def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, confi
         json.dump(meta, f, indent=2)
 
     return model_path
+
+def load_existing_model_with_reset(path, input_shape=None):
+    old_model = load_model(path)
+    model = clone_model(old_model)   
+    if input_shape is not None:
+        try:
+            model.build((None, input_shape[0], input_shape[1]))
+        except Exception:
+            pass 
+        
+    model.compile(optimizer="adam", loss="mean_squared_error")
+    print("🔄 Loaded architecture từ model cũ, reset weights.")
+    return model
+
