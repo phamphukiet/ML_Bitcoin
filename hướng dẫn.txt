@@ -1,0 +1,6 @@
+mở terminate, tải thư viện:
+pip install investpy
+pip install tensorflow
+pip install ccxt
+
+chạy main.py khoảng 3 lần

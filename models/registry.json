@@ -1,0 +1,74 @@
+[
+  {
+    "version": 1,
+    "model_path": "models\\v1\\model.h5",
+    "scaler_x": "models\\v1\\scaler_x.pkl",
+    "scaler_y": "models\\v1\\scaler_y.pkl",
+    "timestamp": "2025-09-13 11:23:32",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 2,
+    "model_path": "models\\v2\\model.h5",
+    "scaler_x": "models\\v2\\scaler_x.pkl",
+    "scaler_y": "models\\v2\\scaler_y.pkl",
+    "timestamp": "2025-09-13 11:24:32",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 3,
+    "model_path": "models\\v3\\model.h5",
+    "scaler_x": "models\\v3\\scaler_x.pkl",
+    "scaler_y": "models\\v3\\scaler_y.pkl",
+    "timestamp": "2025-09-13 12:45:45",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 4,
+    "model_path": "models\\v4\\model.h5",
+    "scaler_x": "models\\v4\\scaler_x.pkl",
+    "scaler_y": "models\\v4\\scaler_y.pkl",
+    "timestamp": "2025-09-13 12:52:58",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 5,
+    "model_path": "models\\v5\\model.h5",
+    "scaler_x": "models\\v5\\scaler_x.pkl",
+    "scaler_y": "models\\v5\\scaler_y.pkl",
+    "timestamp": "2025-09-13 12:56:11",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  },
+  {
+    "version": 6,
+    "model_path": "models\\v6\\model.h5",
+    "scaler_x": "models\\v6\\scaler_x.pkl",
+    "scaler_y": "models\\v6\\scaler_y.pkl",
+    "timestamp": "2025-09-13 12:59:34",
+    "config": {
+      "EPOCHS": 10,
+      "BATCH_SIZE": 32,
+      "PRE_DAY": 30
+    }
+  }
+]
