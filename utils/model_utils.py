@@ -23,15 +23,16 @@ def get_latest_version():
     return max(versions) if versions else 0
 
 def load_existing_model(path):
-    return load_model(path)
+    return load_model(path, compile=False)
 
 def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, config=None, metrics=None):
     version_dir = os.path.join(MODELS_DIR, f"v{version}")
     os.makedirs(version_dir, exist_ok=True)
 
     # --- Save model
-    model_path = os.path.join(version_dir, "model.h5")
-    model.save(model_path)
+    model_path = os.path.join(version_dir, "model.keras")
+    model.save(model_path, save_format="keras")
+
 
     # --- Save scalers
     joblib.dump(scaler_x, os.path.join(version_dir, "scaler_x.pkl"))
@@ -73,7 +74,7 @@ def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, confi
     return model_path
 
 def load_existing_model_with_reset(path, input_shape=None):
-    old_model = load_model(path)
+    old_model = load_model(path, compile=False) 
     model = clone_model(old_model)   
     if input_shape is not None:
         try:

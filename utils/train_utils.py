@@ -14,7 +14,7 @@ def get_callbacks(version):
     callbacks = [
         EarlyStopping(monitor="val_loss", patience=3, restore_best_weights=True),  # giảm patience
         ModelCheckpoint(
-            os.path.join(version_dir, "best_model_tmp.h5"),
+            os.path.join(version_dir, "best_model_tmp.keras"),
             monitor="val_loss",
             save_best_only=True
         )

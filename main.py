@@ -46,9 +46,9 @@ def get_model(x_train):
     version = latest_version + 1
 
     if latest_version > 0:
-        prev_path = os.path.join(MODELS_DIR, f"v{latest_version}", "model.h5")
+        prev_path = os.path.join(MODELS_DIR, f"v{latest_version}", "model.keras")
 
-        RESET_MODEL = True  # 👈 config nhỏ, có thể đưa vào config.py
+        RESET_MODEL = True
         if RESET_MODEL:
             print(f"🔄 Loading kiến trúc từ v{latest_version} và reset weight...")
             model = model_utils.load_existing_model_with_reset(prev_path)
@@ -152,5 +152,5 @@ def main():
     )
 
 if __name__ == "__main__":
-    for _ in range(5):  # chạy thử ít hơn để kiểm chứng
+    for _ in range(5):
         main()

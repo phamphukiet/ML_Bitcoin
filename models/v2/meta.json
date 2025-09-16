@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "model_path": "models\\v2\\model.keras",
+  "scaler_x": "models\\v2\\scaler_x.pkl",
+  "scaler_y": "models\\v2\\scaler_y.pkl",
+  "timestamp": "2025-09-16 21:35:40",
+  "config": {
+    "EPOCHS": 10,
+    "BATCH_SIZE": 32,
+    "PRE_DAY": 30
+  },
+  "metrics": {
+    "RMSE": 4756.244173748429,
+    "MAE": 4010.1816580703876,
+    "MAPE": 3.8423950762700754,
+    "R2": 0.8586982631054169
+  }
+}
