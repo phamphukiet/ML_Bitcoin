@@ -12,7 +12,6 @@ def load_crypto_data(symbol="BTC/USDT", start_date=START_DATE, end_date= END_DAT
         if not ohlcv:
             break
         all_ohlcv += ohlcv
-        # next since = timestamp cuối + 1ms
         since = ohlcv[-1][0] + 1
         if end_date and pd.to_datetime(since, unit="ms") > pd.to_datetime(end_date):
             break

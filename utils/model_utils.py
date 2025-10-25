@@ -51,7 +51,7 @@ def save_model_with_meta(model, scaler_x, scaler_y, version, history=None, confi
         "scaler_y": os.path.join(version_dir, "scaler_y.pkl"),
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
         "config": config or {},
-        "metrics": metrics or {}   # 👈 thêm vào đây
+        "metrics": metrics or {}
     }
     with open(os.path.join(version_dir, "meta.json"), "w") as f:
         json.dump(meta, f, indent=2)
